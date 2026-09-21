@@ -382,6 +382,11 @@ class StickyPadWindow(Gtk.ApplicationWindow):
             self.stick()
         except Exception:
             pass
+        if "--desklet" in sys.argv or "--panel" in sys.argv:
+            self.set_skip_taskbar_hint(True)
+            self.set_skip_pager_hint(True)
+            if "--panel" in sys.argv:
+                self.set_default_size(280, 360)
         if ICON.exists():
             self.set_icon_from_file(str(ICON))
 

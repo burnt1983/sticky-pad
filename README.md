@@ -37,7 +37,16 @@ Self-test:
 python3 sticky_pad.py --self-test
 ```
 
-## Cinnamon desklets
+## Desklet / panel (any Linux)
+
+| Command | What you get |
+|---|---|
+| `sticky-pad --desklet` | Skip-taskbar pad stuck on the desktop |
+| `sticky-pad --panel` | Smaller chip by the panel |
+
+Works on GNOME, Cinnamon, MATE, XFCE, Budgie, LXQt, and KDE. Cinnamon: Settings → Desklets → Sticky Pad.
+
+## Cinnamon spices store
 
 This pad is a **keep-on-top GTK window**, so it already behaves like a Cinnamon
 desklet on the desktop (GNOME, Cinnamon, MATE, XFCE).

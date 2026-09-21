@@ -1,0 +1,11 @@
+{
+  "uuid": "sticky-pad@burnt1983",
+  "name": "Sticky Pad",
+  "description": "Yellow legal-pad notebook on the desktop",
+  "icon": "accessories-text-editor",
+  "command": "sticky-pad --desklet",
+  "panel_command": "sticky-pad --panel",
+  "prevent-decorations": true,
+  "max-instances": 1,
+  "version": "1.0"
+}

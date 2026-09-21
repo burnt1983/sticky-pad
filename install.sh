@@ -38,7 +38,14 @@ if command -v systemctl >/dev/null 2>&1; then
   systemctl --user enable --now sticky-pad.service >/dev/null 2>&1 || true
 fi
 
+if [ -d "$ROOT/cinnamon" ]; then
+  mkdir -p "${HOME}/.local/share/cinnamon/desklets" "${HOME}/.local/share/cinnamon/applets"
+  cp -a "$ROOT/cinnamon/desklets/." "${HOME}/.local/share/cinnamon/desklets/"
+  cp -a "$ROOT/cinnamon/applets/." "${HOME}/.local/share/cinnamon/applets/"
+fi
+
 echo "Installed Sticky Pad."
-echo "  Launch:  sticky-pad"
-echo "  Notes:   ~/.config/lee-stickypad/notes.json"
-echo "Ctrl+N new page · Ctrl+PageDown next page · Pin keeps it on top."
+echo "  Desklet:  sticky-pad --desklet"
+echo "  Panel:    sticky-pad --panel"
+echo "  Notes:    ~/.config/lee-stickypad/notes.json"
+echo "Cinnamon: Desklets → Sticky Pad. Ctrl+N new page."
