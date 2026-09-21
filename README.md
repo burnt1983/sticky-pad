@@ -1,5 +1,7 @@
 # Sticky Pad
 
+<p align="center"><img src="https://repository-images.githubusercontent.com/1380060178/67ee1fa6-e0e3-4873-9fe8-4a387a9619d1" alt="Sticky Pad" width="640"></p>
+
 A yellow legal-pad notebook that sits on the Linux desktop. Click it and type.
 Pages, titles, and a **Pin** button to keep it on top — like a desklet, as a
 plain GTK 3 window.
