@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Sticky Pad
+Comment=Yellow notebook on the desktop — click and type
+Exec=sticky-pad
+Icon=lee-stickypad
+Terminal=false
+Categories=Utility;Office;
+StartupNotify=true
+StartupWMClass=lee-stickypad-widget
+Keywords=sticky;notes;pad;notebook;yellow;desklet;
+X-GNOME-Autostart-enabled=true

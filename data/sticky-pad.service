@@ -1,0 +1,12 @@
+[Unit]
+Description=Sticky Pad yellow desktop notebook
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/sticky-pad
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=default.target
